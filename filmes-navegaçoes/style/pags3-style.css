@@ -1,0 +1,298 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family:'roboto';
+    src: url(../font/Roboto-Medium.ttf);
+}
+@font-face {
+    font-family: 'gotham';
+    src:url(../font/GothamBold.ttf) format('truetype') ;
+    font-weight: normal;
+    font-style: normal;
+}
+main{
+    margin: 0px;
+    padding: 50px;
+    background: white;
+    justify-content: center;
+}
+html{
+    font-family: sans-serif;
+}
+p{
+    font-family: roboto, sans-serif;
+    font-size: 16px;
+}
+h1{
+    font-family: 'gotham', sans-serif;
+    font-size: 30px;
+}
+
+/*header*/
+
+.img-index-txt h1{
+    border-bottom: -50px;
+    position: relative;
+    text-align: center;
+    justify-content: center;
+
+}
+.img-index{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url(../capas/4-img-capa.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -50;
+    padding: 360px 0px 360px 0;
+    color: white;
+}
+.img-index h1{
+    font-family: 'gotham', sans-serif;
+    font-size: 73px;
+}
+
+
+header{
+    width: 100%;
+    height: 100%;
+
+}
+nav{
+    width: 100%;
+    height: 100px;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+
+}
+.logo-menu{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.menu{
+    width: 590px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 50px;
+}
+.menu a{
+    font-family: 'gotham';
+}
+nav a{
+    font-family: 'gotham' ,sans-serif;
+    color: black;
+    text-decoration: none;
+}
+nav li{
+    list-style: none;
+}
+/*header*
+
+
+
+/*CARD FILMES/JOGOS STYLE*/
+#filmes-index a{
+    text-decoration: none;
+    color: black;
+}
+#filmes-index h1{
+    font-size: 30px;
+    margin-bottom: 30px;
+    margin-top: 90px;
+}
+#filmes-index h2{
+    color: black;
+}
+#filmes-index{
+    margin: 90px 0px 30px 0px;
+}
+.card{
+    margin-bottom: 120px;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    /*gap: 0 20px;*/
+    /* aparentemente isso aqui serve para dar as caracteristicas padrão para odos o s cardes no grupo que for colocado/ apresentado isso significa que esse (.card) ele manda nos demias ja que ele e a div principal que engloba tudo certo? certo */
+}
+.card .itens{
+    position: relative;
+    background: white;
+    width: 390px;
+    height: 590px;
+    border-radius: 20px;
+
+    box-shadow: 0px 0px 20px 0px #00000033;
+    /* isto manda em todo o conteudo de imagens e texto dentro do seu card o que significa que nele você define o tamanho do card e aposição dos itens que estão dentro dele*/
+}
+.card .itens img{
+    width: 100%;
+    height: 100%;
+    transition: 0.6s ease-in;
+    border-radius: 20px;
+    object-fit: cover;
+    /*isto e para controlar a imagem do seu card isso significa que ela pode ser alrterada ou não em altura largura */
+}
+.conteiner{
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.9s;
+    color: transparent;
+    top: 330px;
+    left: 15px;
+}
+.conteiner:hover{
+    cursor: pointer;
+}
+.info{
+    margin-left: 5px;
+}
+.conteiner p{
+    padding-top: 5px;
+    width: 350px;
+    text-align: justify;
+    margin-bottom: 5px;
+}
+.itens:hover img{
+    width: 100%;
+    height: 320px;
+}
+ .itens:hover .conteiner{
+    display: block;
+    color: #161623;
+    opacity: 1;
+    visibility: visible;
+    display: block;
+}
+/*CARD FILMES/JOGOS STYLE*/
+
+
+
+/*BOTOES*/
+.botao a{
+    text-decoration: none;
+    
+}
+#botoes-final{
+    display: flex;
+    justify-content: center;
+    font-family: 'gotham', sans-serif;
+    font-size: 25px;
+
+}
+.botao{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 200px;
+    height: 50px;
+    
+}
+
+.botoes-1{
+    height: 45px;
+    width: 45px;
+    background-color: #4D4D4D;
+    border: solid 3px #4D4D4D;
+    color: white;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.botoes-2 a{
+    height: 45px;
+    width: 45px;
+    border: solid 3px #4D4D4D;
+    color: #4D4D4D;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.botoes-1 h2{
+    color: white;
+}
+.botoes-2 a{
+    color: #4D4D4D;
+}
+.botoes-2:hover a{
+    color: white;
+    background: #4D4D4D;
+    cursor: pointer;
+}
+/*BOTOES*/
+
+
+
+/*FOOTER*/
+footer h3{
+    color: white;
+    font-size: 30px;
+    font-family: 'gotham', sans-serif;
+}
+.conteiner-footer h3{
+    margin-bottom: 40px;
+    font-size: 30px;
+    font-family: 'gotham';
+}
+footer p{
+    font-size: 16px;
+    font-family: 'roboto' ;
+    border-bottom: 1px solid white;
+    margin-bottom: 45px;
+    color: white;
+    width: 300px;
+}
+.footer-diretores{
+    margin-top: 35px;
+}
+footer{
+    width: 100%;
+    height: 450px;
+    background: #4D4D4D;
+    display: flex;
+    justify-content: space-between;
+    z-index: -500;
+
+}
+
+.conteiner-footer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 110px;
+    margin: 0px 125px 0px 50px;
+}
+.footer-diretores{
+    padding-top: 35px;
+}
+.subir{
+    margin-left: 913px;
+    margin-bottom: -40px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    background: #535353;
+}
+footer a{
+    text-decoration: none;
+}
+/*FOOTER*/
